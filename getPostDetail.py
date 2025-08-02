@@ -14,13 +14,13 @@ def main():
     if not os.path.exists(token_file):
         print(f"Token file '{token_file}' not found. Please create it and put your token inside.")
         return
-    with open(token_file, "r") as tf:
+    with open(token_file, "r", encoding="utf-8") as tf:
         token = tf.read().strip()
     if not token:
         print("Token file is empty. Exiting.")
         return
 
-    with open(input_file, "r") as f:
+    with open(input_file, "r", encoding="utf-8") as f: 
         data = json.load(f)
 
 

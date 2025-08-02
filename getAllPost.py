@@ -5,7 +5,7 @@ import os
 def read_token(token_file="token.txt"):
     if not os.path.exists(token_file):
         raise FileNotFoundError(f"Token file '{token_file}' not found.")
-    with open(token_file, "r") as f:
+    with open(token_file, "r", encoding="utf-8") as f:
         token = f.read().strip()
     if not token:
         raise ValueError("Token file is empty.")
@@ -31,7 +31,7 @@ def main():
     notif_resp.raise_for_status()
     notif_data = notif_resp.json()
 
-    with open("all_notifications.json", "w") as f:
+    with open("all_notifications.json", "w", encoding="utf-8") as f:
         json.dump(notif_data, f, ensure_ascii=False, indent=2)
     print("All notifications saved to all_notifications.json")
 
