@@ -3,14 +3,14 @@
 [YouTube](https://youtu.be/qKX2iGhvj5s)
 
 ## You may find this command useful
-'''
+```
 pip install -r requirements.txt
-'''
-'''
+```
+```
 python getallpost.py
 python getpostdetail.py
 python extractingposts.py
-'''
+```
 
 ## Requirements
 - Valid JWT token
