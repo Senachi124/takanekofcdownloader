@@ -1,6 +1,6 @@
 # Takaneko fanclub downloader
 ## Please refer to the video
-[YouTube](https://youtu.be/qKX2iGhvj5s)
+[YouTube](https://youtu.be/NfzT5zNEyrs)
 
 ## You may find this command useful
 ```
